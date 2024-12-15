@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{526AC1E1-62C8-4122-87D8-6C75A93B26F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtelProje</RootNamespace>
+    <AssemblyName>OtelProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonel.Designer.cs">
+      <DependentUpon>FormPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYonetGüncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYonetGüncelleme.Designer.cs">
+      <DependentUpon>FormYonetGüncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt.Designer.cs">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiderler.Designer.cs">
+      <DependentUpon>FormGiderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiderListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiderListele.Designer.cs">
+      <DependentUpon>FormGiderListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromKayıtList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromKayıtList.Designer.cs">
+      <DependentUpon>FromKayıtList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayıtList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayıtList.Designer.cs">
+      <DependentUpon>KayıtList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonel.resx">
+      <DependentUpon>FormPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYonetGüncelleme.resx">
+      <DependentUpon>FormYonetGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt.resx">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiderler.resx">
+      <DependentUpon>FormGiderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiderListele.resx">
+      <DependentUpon>FormGiderListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromKayıtList.resx">
+      <DependentUpon>FromKayıtList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayıtList.resx">
+      <DependentUpon>KayıtList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OtelDataSet.xsc">
+      <DependentUpon>OtelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet.xss">
+      <DependentUpon>OtelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet1.xsc">
+      <DependentUpon>OtelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet1.xss">
+      <DependentUpon>OtelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet2.xsc">
+      <DependentUpon>OtelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet2.xss">
+      <DependentUpon>OtelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet3.xsc">
+      <DependentUpon>OtelDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet3.xss">
+      <DependentUpon>OtelDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet4.xsc">
+      <DependentUpon>OtelDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet4.xss">
+      <DependentUpon>OtelDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet5.xsc">
+      <DependentUpon>OtelDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet5.xss">
+      <DependentUpon>OtelDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet6.xsc">
+      <DependentUpon>OtelDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet6.xss">
+      <DependentUpon>OtelDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet7.xsc">
+      <DependentUpon>OtelDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet7.xss">
+      <DependentUpon>OtelDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet8.xsc">
+      <DependentUpon>OtelDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet8.xss">
+      <DependentUpon>OtelDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet9.xsc">
+      <DependentUpon>OtelDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="OtelDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelDataSet9.xss">
+      <DependentUpon>OtelDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matiat_img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-button-delete-key-icon-warning-icons-text-sign-area-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-button-add-icon-web-symbol-internet-website-navigation-positive-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-button-add-icon-web-symbol-internet-website-navigation-positive-green1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-editing-delete-button-miscellaneous-angle-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suit-otel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suit-otel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deluxe-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29oda.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
